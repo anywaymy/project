@@ -6,6 +6,28 @@
     <style>
         * {
             font-size: 34px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #00FF7F;
+        }
+        .header .container {
+            display:flex; align-items: center; justify-content: space-between;
+        }
+        .logo {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .main .container {
+            background-color: #B22222;
+        }
+        .main {
+            text-align: center;
+        }
+        .main h1 {
+            margin-bottom: 40px;
         }
         .about .container {
             text-align: center;
@@ -23,6 +45,12 @@
                 </ul>
             </nav>
         </header>
+        <div class="main">
+            <div class="container" style="padding: 0 100px;">
+                <h1>Main block</h1>
+                <p>This site created special for your creativity</p>
+            </div>
+        </div>
         <section class="about">
             <div class="container">
                 <h1>About us</h1>
