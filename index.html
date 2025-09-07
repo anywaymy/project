@@ -16,6 +16,9 @@
         .header .container {
             display:flex; align-items: center; justify-content: space-between;
         }
+        .container {
+            padding: 0 100px;
+        }
         .logo {
             text-transform: uppercase;
             font-weight: 600;
@@ -36,14 +39,16 @@
     </style>
 </head>
 <body>
-    <div class="wrapper" style="padding: 0 100px;">
-        <header class="header" style="display:flex; align-items: center; justify-content: space-between;">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
             <div class="logo">clone</div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="">home</a></li>
-                </ul>
-            </nav>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="">home</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <div class="main">
             <div class="container" style="padding: 0 100px;">
