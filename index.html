@@ -6,19 +6,45 @@
     <style>
         * {
             font-size: 34px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #00FF7F;
+        }
+        .header .container {
+            display:flex; align-items: center; justify-content: space-between;
+        }
+        .main .container {
+            background-color: #B22222;
+        }
+        .main {
+            text-align: center;
+        }
+        .main h1 {
+            margin-bottom: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="wrapper" style="padding: 0 100px;">
-        <header class="header" style="display:flex; align-items: center; justify-content: space-between;">
-            <div class="logo">clone</div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="">home</a></li>
-                </ul>
-            </nav>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container" style="padding: 0 100px;">
+                <div class="logo">clone</div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="">home</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+        <div class="main">
+            <div class="container" style="padding: 0 100px;">
+                <h1>Main block</h1>
+                <p>This site created special for your creativity</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
